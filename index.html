@@ -6,8 +6,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Examen Recuperatorio</h1>
-    <!-- Escribe aquí todo tu HTML -->
+    <main class="contenedor">
+      <h1>Directorio de Contactos</h1>
+
+      <section class="formulario">
+        <input type="text" id="nombre" placeholder="nombre">
+        <input type="text" id="telefono" placeholder="Telefono">
+        <button id="btn-agregar">Agregar</button>
+      </section>
+
+      <section class="buscador">
+        <input type="text" id="buscar" placeholder="Bucar contactos por nombre...">
+        <div class="lista-contactos">
+
+        </div>
+        <p class="contacto-vacio">Todavia no agregaste contactos.</p>
+      </section>
+
+      <p id="contador">Contactos: <span>0</span></p>
+    </main>
 
     <script src="script.js"></script>
   </body>
