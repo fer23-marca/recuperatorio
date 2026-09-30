@@ -47,3 +47,23 @@ btnAgregar.addEventListener("click", function () {
   }); 
  
 }); 
+
+buscar.addEventListener("input", function () {
+
+  const texto = buscar.value.toLowerCase();
+
+  const contactos = listaContactos.querySelectorAll(".contacto");
+
+  contactos.forEach(function (contacto) {
+
+    const nombreContacto = contacto.querySelector("strong").textContent.toLowerCase();
+
+    if (nombreContacto.includes(texto)) {
+      contacto.style.display = "flex";
+    } else {
+      contacto.style.display = "none";
+    }
+
+  });
+
+});
